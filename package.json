@@ -11,8 +11,8 @@
       "dev": "ts-node-dev --respawn --transpile-only --exit-child ./src/app.ts",
       "type": "module",
       "typeorm": "typeorm-ts-node-commonjs",
-      "migrate": "rm -rf build && npm run build && npm run typeorm migration:generate ./src/migrations/added-entity -d ./src/utils/data-source.ts",
-      "db:push": "rm -rf build && npm run build && npn run typeorm migration:run -d src/utils/data-source.ts"
+      "migrate": "rm -rf build && npm run build && npm run typeorm migration:generate  src/migrations/added-entity  -- -d src/utils/data-source.ts",
+      "db:push": "rm -rf build && npm run build && npm run typeorm migration:run -- -d src/utils/data-source.ts"
    },
    "keywords": [],
    "author": "",
@@ -49,6 +49,7 @@
       "swagger-ui-express": "^5.0.0",
       "ts-node": "^10.9.1",
       "typeorm": "0.3.17",
-      "zod": "^3.21.4"
+      "zod": "^3.21.4",
+      "body-parser": "^1.19.1"
    }
 }

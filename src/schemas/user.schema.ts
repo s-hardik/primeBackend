@@ -3,7 +3,10 @@ import { RoleEnumType } from '../entity/user.entity';
 
 export const createUserSchema = object({
   body: object({
-    name: string({
+    firstname: string({
+      required_error: 'Name is required',
+    }),
+    lastname: string({
       required_error: 'Name is required',
     }),
     email: string({

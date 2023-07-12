@@ -10,7 +10,9 @@ export enum RoleEnumType {
 @Entity('users')
 export class User extends Model {
   @Column()
-  name: string;
+  firstname: string;
+  @Column()
+  lastname: string;
 
   @Index('email_index')
   @Column({

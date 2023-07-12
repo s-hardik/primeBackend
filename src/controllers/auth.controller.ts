@@ -40,10 +40,11 @@ export const registerUserHandler = async (
     next: NextFunction
 ) => {
     try {
-        const { name, password, email } = req.body;
+        const { firstname,lastname, password, email } = req.body;
 
         const user = await createUser({
-            name,
+            firstname,
+            lastname,
             email: email.toLowerCase(),
             password,
         });
