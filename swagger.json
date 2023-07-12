@@ -1,0 +1,12 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Project Numb",
+        "description": "Saas Application to Manage School Institute students everyhting at one place",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    }
+}

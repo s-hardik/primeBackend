@@ -1,0 +1,10 @@
+{
+    "type": "postgres",
+    "host": "commondb.cefmqhnavjfb.ap-south-1.rds.amazonaws.com",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgresadmin",
+    "database": "primeDb",
+    "entities": ["src/entity/*.ts"],
+    "synchronize": true
+  }
